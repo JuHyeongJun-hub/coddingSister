@@ -3,18 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/material": "^7.1.0",
+    "@tanstack/react-query": "^5.76.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "@types/react-router-dom": "^5.3.3",
+    "axios": "^1.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^7.6.0",
+    "react-router-dom": "^7.6.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -35,5 +45,25 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/plugin-transform-runtime": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@svgr/webpack": "^8.1.0",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "babel-loader": "^10.0.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "dotenv-webpack": "^8.1.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
   }
 }

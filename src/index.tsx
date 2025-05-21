@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter} from 'react-router-dom';
+import theme from './theme';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('content') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+          <App />
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
