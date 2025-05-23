@@ -7,7 +7,7 @@ const useClientCredentialToken = ():string | undefined => {
         queryFn:getClientCredentialToken
     })
 
-    alert("data :: " + JSON.stringify(data));
+    //alert("data :: " + JSON.stringify(data));
 
     const clientCredentialToken = data?.access_token;
     return clientCredentialToken;
