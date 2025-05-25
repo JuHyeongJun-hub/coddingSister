@@ -10,7 +10,7 @@ const encodedBase64 = (data:string):string => {
     } else {
         //Node.js 환경
         return Buffer.from(data).toString("base64");
-    }
+    } 
 }
 
 export const getClientCredentialToken = async (): Promise<ClientCredentialTokenResponse> => {
